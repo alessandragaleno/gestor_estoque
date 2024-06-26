@@ -3,7 +3,6 @@ from django.db import models
 from utils.base_models import BaseModel
 
 
-# Create your models here.
 class Local(BaseModel):
     TIPOS_DE_LOCAL = [
         ('F', 'Fisico'),
@@ -18,7 +17,6 @@ class Local(BaseModel):
         choices=TIPOS_DE_LOCAL,  # type: ignore
         verbose_name='Tipo do local movimentado',
     )
-
     nome = models.CharField(
         max_length=50,
         verbose_name='Nome do local armazenado')
@@ -50,7 +48,7 @@ class Movimentacao(BaseModel):
         verbose_name='Fornecedor do produto movimentado',
     )
     local = models.ForeignKey(
-        'produtos.local',
+        'produtos.Local',
         on_delete=models.CASCADE,
         verbose_name='Local de movimentação',
     )
@@ -83,7 +81,7 @@ class Movimentacao(BaseModel):
         verbose_name='Fornecedor do produto movimentado'
     )
     local = models.ForeignKey(
-        'produtos.local',
+        'produtos.Local',
         on_delete=models.CASCADE,
         verbose_name='Local de movimentação'
     )
