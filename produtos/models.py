@@ -140,22 +140,6 @@ class Fornecedor(BaseModel):
         db_table = 'fornecedores'
 
 
-class Produto(BaseModel):
-    nome = models.CharField(
-        max_length=100,
-        verbose_name='Nome do produto'
-    )
-    categoria = models.ForeignKey(
-        'produtos.Categoria',
-        on_delete=models.CASCADE,
-        verbose_name='categoria de produto'
-    )
-    embalagens = models.ManyToManyField(
-        'produtos.Embalagem',
-        verbose_name='Embalagem do produto'
-    )
-
-
 class Produto(BaseModel):  # noqa: F811
     nome = models.CharField(
         max_length=100,
