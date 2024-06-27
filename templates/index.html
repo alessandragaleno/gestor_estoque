@@ -1,4 +1,5 @@
-{% load static%}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -7,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>{% block title %}Gestor de Estoque{% endblock title %}</title>
+        <title>{% block title %}Gestor de estoque{% endblock title %}</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -15,7 +16,7 @@
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Gestor de Estoque</a>
+            <a class="navbar-brand ps-3" href="index.html">Gestor de estoque</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar-->
@@ -55,7 +56,7 @@
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                                Pages
+                                Páginas
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
@@ -87,11 +88,11 @@
                             <div class="sb-sidenav-menu-heading">Addons</div>
                             <a class="nav-link" href="charts.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Charts
+                                Gráficos
                             </a>
                             <a class="nav-link" href="tables.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Tables
+                                Tabelas
                             </a>
                         </div>
                     </div>
@@ -101,45 +102,45 @@
                 <main>
                     <div class="container-fluid px-4">
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-12 mt-4 mb-4">
-                                <a href="#" clss="text-decoration-none">
-                                    <div class=".card text-black text-center">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-4">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card text-black text-center">
                                         <div class="card-body">
-                                            <i class="fas fas-box fa-3x"></i>
-                                            <h5 class="card-title">Embalagens</h5>
+                                            <i class="fas fa-box fa-3x"></i>
+                                            <h5 class="card-title mt-2">Embalagens</h5>
                                         </div>
                                     </div>
-                                </a>
+                                </a>   
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 mt-4 mb-4">
-                                <a href="#" clss="text-decoration-none">
-                                    <div class=".card text-black text-center">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-4">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card text-black text-center">
                                         <div class="card-body">
-                                            <i class="fas fas-truck fa-3x"></i>
-                                            <h5 class="card-title">Fornecedores</h5>
+                                            <i class="fas fa-truck fa-3x"></i>
+                                            <h5 class="card-title mt-2">Fornecedores</h5>
                                         </div>
                                     </div>
-                                </a>
+                                </a>   
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 mt-4 mb-4">
-                                <a href="#" clss="text-decoration-none">
-                                    <div class=".card text-black text-center">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-4">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card text-black text-center">
                                         <div class="card-body">
                                             <i class="fas fa-map-marker-alt fa-3x"></i>
-                                            <h5 class="card-title">Locais</h5>
+                                            <h5 class="card-title mt-2">Locais</h5>
                                         </div>
                                     </div>
-                                </a>
+                                </a>   
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 mt-4 mb-4">
-                                <a href="#" clss="text-decoration-none">
-                                    <div class=".card text-black text-center">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-4">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card text-black text-center">
                                         <div class="card-body">
-                                            <i class="fas fas-boxes fa-3x"></i>
-                                            <h5 class="card-title">Produtos</h5>
+                                            <i class="fas fa-boxes fa-3x"></i>
+                                            <h5 class="card-title mt-2">Produtos</h5>
                                         </div>
                                     </div>
-                                </a>
+                                </a>   
                             </div>
                         </div>
                     </div>
