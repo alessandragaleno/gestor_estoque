@@ -1,0 +1,23 @@
+{% extends 'listar_embalagem.html' %}
+
+{% block content %}
+  <h1>Exclude Files</h1>
+  <form method="post">
+    {% csrf_token %}
+    <label for="excluir_embalagem">selecionar produto:</label>
+    <select id="excluir_embalagem" name="excluir_embalagem">
+      {% for file in files %}
+        <option value="{{ excluir_embalagem.id }}">{{ excluir_embalagem.name }}</option>
+      {% endfor %}
+    </select>
+    <button type="submit">Excluir embalagem</button>
+  </form>
+
+  {% if excluded_files %}
+    <h2>Excluded Files:</h2>
+    <ul>
+      {% for file in excluded_files %}
+        <li>{{ excluir_embalagem.name }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
