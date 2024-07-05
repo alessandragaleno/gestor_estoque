@@ -3,6 +3,7 @@ from .views import adicionar_local, inicio, listar_locais, listar_embalagem, adi
 
 
 urlpatterns = [
+    # local
     path('', inicio, name='inicio'),
     path('locais/', listar_locais, name='listar_locais'),  # noqa: F821
     path('locais/adicionar/', adicionar_local, name='adicionar_local'),
