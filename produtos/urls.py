@@ -1,5 +1,5 @@
 from django.urls import path  # noqa: I001
-from .views import adicionar_local, inicio, listar_locais, listar_embalagem, adicionar_embalagem, editar_local  # noqa: E501, F811, F401
+from .views import adicionar_local, inicio, listar_locais, listar_embalagem, adicionar_embalagem, editar_local, excluir_embalagem, excluir_local, editar_embalagem  # noqa: E501, F811, F401
 
 
 urlpatterns = [
