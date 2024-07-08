@@ -165,7 +165,7 @@ class Produto(BaseModel):  # noqa: F811
 class Categoria(BaseModel):
     nome = models.CharField(
         max_length=100,
-        verbose_name='ome da categoria'
+        verbose_name='nome da categoria'
     )
     unique = True
     nome = models.CharField(

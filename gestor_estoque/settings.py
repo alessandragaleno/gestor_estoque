@@ -39,8 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
+    'crispy_bootstrap5',
     'produtos',
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -54,7 +59,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'gestor_estoque.urls'
 
-TEMPLATES_DIR = BASE_DIR / 'templates'
+TEMPLATES_DIR = BASE_DIR / "templates"
 
 TEMPLATES = [
     {
@@ -121,11 +126,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES = [BASE_DIR / "static"]
+STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 
-MEDI_URL = "/media/"
+MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / "media"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
