@@ -17,7 +17,11 @@ from .views import (
 )
 
 urlpatterns = [
+<<<<<<< HEAD
     # locais
+=======
+    # local
+>>>>>>> 6617d90f040be5222466f9490aacad493b5a1e96
     path('', inicio, name='inicio'),
     path('locais/', listar_locais, name='listar_locais'),  # noqa: F821
     path('locais/adicionar/', adicionar_local, name='adicionar_local'),
